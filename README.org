@@ -1,0 +1,8 @@
+* issue-maker
+
+#+BEGIN_SRC
+Metacello new
+   baseline: 'IssueMaker;
+   repository: 'github://vonbecmann/issue-maker/repository';
+   load.
+#+END_SRC
