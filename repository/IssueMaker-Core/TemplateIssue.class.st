@@ -42,7 +42,7 @@ TemplateIssue >> contentsWith: anArgumentArray [
 	^templateString expandMacrosWithArguments: anArgumentArray.
 ]
 
-{ #category : #'initialize-release' }
+{ #category : #initialization }
 TemplateIssue >> initialize [
 	super initialize.
 	templateString := 
