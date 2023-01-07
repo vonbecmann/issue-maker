@@ -24,9 +24,3 @@ IssueMakerOnWorldMenu class >> menuCommandOn: aBuilder [
 		withSeparatorAfter
 	
 ]
-
-{ #category : #buttons }
-IssueMakerOnWorldMenu class >> openIssueMakerButtonOn: aBuilder [
-	<twmBarButton>
-	aBuilder action: [ IssueMaker newIssue ]
-]
