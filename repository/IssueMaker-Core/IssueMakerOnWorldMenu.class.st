@@ -2,19 +2,20 @@
 i know how to show a shortcut to IssueMaker on the World Menu
 "
 Class {
-	#name : #IssueMakerOnWorldMenu,
-	#superclass : #Object,
-	#category : #'IssueMaker-Core'
+	#name : 'IssueMakerOnWorldMenu',
+	#superclass : 'Object',
+	#category : 'IssueMaker-Core',
+	#package : 'IssueMaker-Core'
 }
 
-{ #category : #private }
+{ #category : 'private' }
 IssueMakerOnWorldMenu class >> defaultLabel [
 	"default label"
 
 	^ 'New Issue'
 ]
 
-{ #category : #menu }
+{ #category : 'menu' }
 IssueMakerOnWorldMenu class >> menuCommandOn: aBuilder [ 
 	<worldMenu> 
 	(aBuilder item: #IssueMaker)

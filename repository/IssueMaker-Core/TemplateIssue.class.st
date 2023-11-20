@@ -14,15 +14,16 @@ with the proper arguments, i'll give you the actual template issue and you will 
 the steps to reproduce it.
 "
 Class {
-	#name : #TemplateIssue,
-	#superclass : #Object,
+	#name : 'TemplateIssue',
+	#superclass : 'Object',
 	#instVars : [
 		'templateString'
 	],
-	#category : #'IssueMaker-Core'
+	#category : 'IssueMaker-Core',
+	#package : 'IssueMaker-Core'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 TemplateIssue class >> defaultContents [
 	"default contents for the actual values of this system"
 	
@@ -35,14 +36,14 @@ TemplateIssue class >> defaultContents [
 	^ (self new) contentsWith: arguments.
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 TemplateIssue >> contentsWith: anArgumentArray [ 
 	"returns contents for the arguments."
 	
 	^templateString expandMacrosWithArguments: anArgumentArray.
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 TemplateIssue >> initialize [
 	super initialize.
 	templateString := 

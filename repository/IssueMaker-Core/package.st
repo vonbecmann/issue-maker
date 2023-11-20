@@ -1,1 +1,1 @@
-Package { #name : #'IssueMaker-Core' }
+Package { #name : 'IssueMaker-Core' }
